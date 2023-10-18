@@ -16,6 +16,7 @@ async function handler(_req: Request): Promise<Response> {
         body: JSON.stringify(data)
     });
     const r_data = await response.json();
+    console.log(r_data.simscore)
   
     return new Response(r_data.simscore);
 }
